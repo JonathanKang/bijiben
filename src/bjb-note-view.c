@@ -76,11 +76,8 @@ static void
 bjb_note_view_finalize(GObject *object)
 {
   BjbNoteView *self = BJB_NOTE_VIEW (object) ;
-  BjbNoteViewPrivate *priv = self->priv;
 
   bjb_note_view_disconnect (self);
-
-  g_clear_object (&priv->view);
 
   G_OBJECT_CLASS (bjb_note_view_parent_class)->finalize (object);
 }
