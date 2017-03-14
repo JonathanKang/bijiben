@@ -328,7 +328,6 @@ add_child (gpointer provider_info, gpointer user_data)
   gtk_widget_set_margin_end (w, 180);
   gtk_container_add (GTK_CONTAINER (box), w);
   gtk_widget_set_valign (w, GTK_ALIGN_CENTER);
-  gtk_box_pack_end (GTK_BOX (box), w, FALSE, FALSE, 0);
 
   self->priv->children = g_list_prepend (priv->children, child);
   gtk_widget_show_all (box);
