@@ -123,7 +123,6 @@ bjb_main_view_disconnect_handlers (BjbMainView *self)
   BjbMainViewPriv *priv = self->priv;
 
   g_signal_handler_disconnect (priv->window, priv->key);
-  g_signal_handler_disconnect (priv->view, priv->activated);
   g_signal_handler_disconnect (priv->view, priv->data);
   g_signal_handler_disconnect (priv->view, priv->view_selection_changed);
 
